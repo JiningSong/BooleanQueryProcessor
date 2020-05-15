@@ -40,10 +40,6 @@ public class Evaluator {
 
         System.err.println(String.format("[Evaluator:queryTerms]: %s", queryTerms.toString()));
 
-        for(int i=0; i<queryTerms.size(); i++){
-            queryTerms.get(i)
-        }
-
         // Fake term_dict (TODO: replace this by search result from InvertedSearch)
         HashMap<String, List<String>> term_dict = new HashMap<String, List<String>>();
         term_dict.put("term1", new ArrayList<String>(Arrays.asList("id_0", "id_1", "id_2")));
